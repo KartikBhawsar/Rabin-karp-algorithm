@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void rabinkarpalgorithm(string str1,string str2)
+{
+    int n=str1.size();
+    int m=str2.size();
+    for(int i=0;i<n;i++)
+    {
+        if(str1.substr(i,m)==str2)
+        {
+            cout<<"find at index:"<<i<<endl;
+        }
+    }
+}
+int main()
+{
+    string str1="batmanandrobinarebat";
+    string str2="bat";
+    rabinkarpalgorithm(str1,str2);
+    return 0;
+
+}
